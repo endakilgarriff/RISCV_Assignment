@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Nov  2 09:13:16 2020
-# Process ID: 27432
-# Current directory: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.runs/synth_1
+# Start of session at: Mon Nov  2 10:14:41 2020
+# Process ID: 13288
+# Current directory: C:/RISCV_Assignment/xilinxprj/RISCV/riscv.runs/synth_1
 # Command line: vivado.exe -log RISCV.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV.tcl
-# Log file: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.vds
-# Journal file: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.runs/synth_1\vivado.jou
+# Log file: C:/RISCV_Assignment/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.vds
+# Journal file: C:/RISCV_Assignment/xilinxprj/RISCV/riscv.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source RISCV.tcl -notrace
 Command: synth_design -top RISCV -part xc7z020clg400-1
@@ -15,44 +15,44 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27232 
+INFO: Helper process launched with PID 22808 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 459.727 ; gain = 161.973
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 443.633 ; gain = 154.016
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'RISCV' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:23]
-INFO: [Synth 8-3491] module 'RISCV_IF' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:27' bound to instance 'IF_i' of component 'RISCV_IF' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:128]
-INFO: [Synth 8-638] synthesizing module 'RISCV_IF' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:39]
-INFO: [Synth 8-3491] module 'CB32CLEIncValue' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd:12' bound to instance 'PCCU_i' of component 'CB32CLEIncValue' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:64]
-INFO: [Synth 8-638] synthesizing module 'CB32CLEIncValue' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'CB32CLEIncValue' (1#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd:24]
-INFO: [Synth 8-3491] module 'IM' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd:12' bound to instance 'IM_i' of component 'IM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'IM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'IM' (2#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'RISCV_IF' (3#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:39]
-INFO: [Synth 8-3491] module 'ID' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:18' bound to instance 'ID_i' of component 'ID' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:147]
-INFO: [Synth 8-638] synthesizing module 'ID' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:41]
-INFO: [Synth 8-3491] module 'DEC' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:13' bound to instance 'DEC_i' of component 'DEC' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'DEC' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:34]
-WARNING: [Synth 8-614] signal 'bitEq0' is read in the process but is not in the sensitivity list [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:113]
-WARNING: [Synth 8-614] signal 'bitEq1' is read in the process but is not in the sensitivity list [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:113]
-INFO: [Synth 8-256] done synthesizing module 'DEC' (4#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:34]
-INFO: [Synth 8-3491] module 'RB' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd:27' bound to instance 'RB_i' of component 'RB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'RB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'RB' (5#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'ID' (6#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:41]
-INFO: [Synth 8-3491] module 'EX' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:16' bound to instance 'EX_i' of component 'EX' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'EX' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:33]
-INFO: [Synth 8-3491] module 'ALU' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd:39' bound to instance 'ALU_i' of component 'ALU' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'EX' (8#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:33]
-INFO: [Synth 8-3491] module 'MEM' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd:12' bound to instance 'MEM_i' of component 'MEM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:185]
-INFO: [Synth 8-638] synthesizing module 'MEM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'MEM' (9#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd:23]
-INFO: [Synth 8-3491] module 'WB' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd:19' bound to instance 'WB_i' of component 'WB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:195]
-INFO: [Synth 8-638] synthesizing module 'WB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'WB' (10#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'RISCV' (11#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'RISCV' [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:23]
+INFO: [Synth 8-3491] module 'RISCV_IF' declared at 'C:/RISCV_Assignment/HDLmodel/IF/IF.vhd:27' bound to instance 'IF_i' of component 'RISCV_IF' [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'RISCV_IF' [C:/RISCV_Assignment/HDLmodel/IF/IF.vhd:39]
+INFO: [Synth 8-3491] module 'CB32CLEIncValue' declared at 'C:/RISCV_Assignment/HDLmodel/IF/CB32CLEIncValue.vhd:12' bound to instance 'PCCU_i' of component 'CB32CLEIncValue' [C:/RISCV_Assignment/HDLmodel/IF/IF.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'CB32CLEIncValue' [C:/RISCV_Assignment/HDLmodel/IF/CB32CLEIncValue.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'CB32CLEIncValue' (1#1) [C:/RISCV_Assignment/HDLmodel/IF/CB32CLEIncValue.vhd:24]
+INFO: [Synth 8-3491] module 'IM' declared at 'C:/RISCV_Assignment/HDLmodel/IF/IM.vhd:12' bound to instance 'IM_i' of component 'IM' [C:/RISCV_Assignment/HDLmodel/IF/IF.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'IM' [C:/RISCV_Assignment/HDLmodel/IF/IM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'IM' (2#1) [C:/RISCV_Assignment/HDLmodel/IF/IM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'RISCV_IF' (3#1) [C:/RISCV_Assignment/HDLmodel/IF/IF.vhd:39]
+INFO: [Synth 8-3491] module 'ID' declared at 'C:/RISCV_Assignment/HDLmodel/ID/ID.vhd:18' bound to instance 'ID_i' of component 'ID' [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'ID' [C:/RISCV_Assignment/HDLmodel/ID/ID.vhd:41]
+INFO: [Synth 8-3491] module 'DEC' declared at 'C:/RISCV_Assignment/HDLmodel/ID/DEC.vhd:13' bound to instance 'DEC_i' of component 'DEC' [C:/RISCV_Assignment/HDLmodel/ID/ID.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'DEC' [C:/RISCV_Assignment/HDLmodel/ID/DEC.vhd:34]
+WARNING: [Synth 8-614] signal 'bitEq0' is read in the process but is not in the sensitivity list [C:/RISCV_Assignment/HDLmodel/ID/DEC.vhd:113]
+WARNING: [Synth 8-614] signal 'bitEq1' is read in the process but is not in the sensitivity list [C:/RISCV_Assignment/HDLmodel/ID/DEC.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'DEC' (4#1) [C:/RISCV_Assignment/HDLmodel/ID/DEC.vhd:34]
+INFO: [Synth 8-3491] module 'RB' declared at 'C:/RISCV_Assignment/HDLmodel/ID/RB.vhd:27' bound to instance 'RB_i' of component 'RB' [C:/RISCV_Assignment/HDLmodel/ID/ID.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'RB' [C:/RISCV_Assignment/HDLmodel/ID/RB.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'RB' (5#1) [C:/RISCV_Assignment/HDLmodel/ID/RB.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ID' (6#1) [C:/RISCV_Assignment/HDLmodel/ID/ID.vhd:41]
+INFO: [Synth 8-3491] module 'EX' declared at 'C:/RISCV_Assignment/HDLmodel/EX/EX.vhd:16' bound to instance 'EX_i' of component 'EX' [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'EX' [C:/RISCV_Assignment/HDLmodel/EX/EX.vhd:33]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/RISCV_Assignment/HDLmodel/EX/ALU.vhd:39' bound to instance 'ALU_i' of component 'ALU' [C:/RISCV_Assignment/HDLmodel/EX/EX.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/RISCV_Assignment/HDLmodel/EX/ALU.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [C:/RISCV_Assignment/HDLmodel/EX/ALU.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'EX' (8#1) [C:/RISCV_Assignment/HDLmodel/EX/EX.vhd:33]
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/RISCV_Assignment/HDLmodel/MEM/MEM.vhd:12' bound to instance 'MEM_i' of component 'MEM' [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/RISCV_Assignment/HDLmodel/MEM/MEM.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (9#1) [C:/RISCV_Assignment/HDLmodel/MEM/MEM.vhd:23]
+INFO: [Synth 8-3491] module 'WB' declared at 'C:/RISCV_Assignment/HDLmodel/WB/WB.vhd:19' bound to instance 'WB_i' of component 'WB' [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'WB' [C:/RISCV_Assignment/HDLmodel/WB/WB.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'WB' (10#1) [C:/RISCV_Assignment/HDLmodel/WB/WB.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'RISCV' (11#1) [C:/RISCV_Assignment/HDLmodel/RISCV.vhd:23]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[31]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[30]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[29]
@@ -106,22 +106,22 @@ WARNING: [Synth 8-3331] design IM has unconnected port PC[8]
 WARNING: [Synth 8-3331] design IM has unconnected port PC[1]
 WARNING: [Synth 8-3331] design IM has unconnected port PC[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 522.527 ; gain = 224.773
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 507.086 ; gain = 217.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 522.527 ; gain = 224.773
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 507.086 ; gain = 217.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 522.527 ; gain = 224.773
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 507.086 ; gain = 217.469
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-5546] ROM "IMArray" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 542.902 ; gain = 245.148
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 528.715 ; gain = 239.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -259,7 +259,7 @@ WARNING: [Synth 8-3331] design MEM has unconnected port add[8]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[1]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,7 +272,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -284,7 +284,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,7 +308,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -321,7 +321,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,25 +333,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -376,25 +376,25 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 696.602 ; gain = 398.848
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 684.977 ; gain = 395.359
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.309 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 787.289 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 40 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 801.309 ; gain = 503.555
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.309 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 787.289 ; gain = 497.672
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 787.289 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/RISCV_Assignment/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RISCV_utilization_synth.rpt -pb RISCV_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 09:13:46 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 10:15:02 2020...

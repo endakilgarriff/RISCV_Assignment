@@ -32,10 +32,10 @@ signal MToWB  : std_logic_vector(31 downto 0);
 begin
 
 
-selLdSlice_i: process(DFrM,selDFRM)
+selLdSlice_i: process(DFrM,selDFrM)
 begin
    MToWB <= DFrM;
-   case selDFRM is
+   case selDFrM is
         when "000" => MToWB <= DFrM;
         when "001" => MToWB <= (x"ffff"&DFrM(15 downto 0 ));
         when "010" => MToWB <= (x"ffffff"& DFrM(7 downto 0));

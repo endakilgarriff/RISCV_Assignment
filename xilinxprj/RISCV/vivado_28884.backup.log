@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  2 08:52:00 2020
+# Process ID: 28884
+# Current directory: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10384 C:\RISCV_VivadoVHDLProject_vicilogic_2\xilinxprj\RISCV\riscv.xpr
+# Log file: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/vivado.log
+# Journal file: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/../../Users/0004322S/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:17 . Memory (MB): peak = 672.688 ; gain = 81.332
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: RISCV
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.398 ; gain = 177.070
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:51]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'RISCV' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:23]
+INFO: [Synth 8-3491] module 'RISCV_IF' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:27' bound to instance 'IF_i' of component 'RISCV_IF' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'RISCV_IF' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:39]
+INFO: [Synth 8-3491] module 'CB32CLEIncValue' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd:12' bound to instance 'PCCU_i' of component 'CB32CLEIncValue' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'CB32CLEIncValue' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'CB32CLEIncValue' (1#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd:24]
+INFO: [Synth 8-3491] module 'IM' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd:12' bound to instance 'IM_i' of component 'IM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'IM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'IM' (2#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'RISCV_IF' (3#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd:39]
+INFO: [Synth 8-3491] module 'ID' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:18' bound to instance 'ID_i' of component 'ID' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'ID' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:41]
+INFO: [Synth 8-3491] module 'DEC' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:13' bound to instance 'DEC_i' of component 'DEC' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'DEC' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:34]
+WARNING: [Synth 8-614] signal 'bitEq0' is read in the process but is not in the sensitivity list [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:113]
+WARNING: [Synth 8-614] signal 'bitEq1' is read in the process but is not in the sensitivity list [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'DEC' (4#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd:34]
+INFO: [Synth 8-3491] module 'RB' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd:27' bound to instance 'RB_i' of component 'RB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'RB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'RB' (5#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ID' (6#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd:41]
+INFO: [Synth 8-3491] module 'EX' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:16' bound to instance 'EX_i' of component 'EX' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'EX' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:33]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd:39' bound to instance 'ALU_i' of component 'ALU' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'EX' (8#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd:33]
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd:12' bound to instance 'MEM_i' of component 'MEM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (9#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd:23]
+INFO: [Synth 8-3491] module 'WB' declared at 'C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd:19' bound to instance 'WB_i' of component 'WB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'WB' [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'WB' (10#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'RISCV' (11#1) [C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd:23]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[31]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[30]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[29]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[28]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[27]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[26]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[25]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[24]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[23]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[22]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[21]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[20]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[19]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[18]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[17]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[16]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[15]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[14]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[13]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[12]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[11]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[10]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[9]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[8]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port add[0]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[31]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[30]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[29]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[28]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[27]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[26]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[25]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[24]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[23]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[22]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[21]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[20]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[19]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[18]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[17]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[16]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[15]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[14]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[13]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[12]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[11]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[10]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[9]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[8]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[1]
+WARNING: [Synth 8-3331] design IM has unconnected port PC[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1153.477 ; gain = 221.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1153.477 ; gain = 221.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1153.477 ; gain = 221.148
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1303.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.562 ; gain = 427.234
+36 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1359.562 ; gain = 672.004
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISCV_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RISCV_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+"xelab -wto b2ac9b69423e436595a5ff0b2f7dfae7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RISCV_TB_behav xil_defaultlib.RISCV_TB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b2ac9b69423e436595a5ff0b2f7dfae7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RISCV_TB_behav xil_defaultlib.RISCV_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.562 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RISCV_TB_behav -key {Behavioral:sim_1:Functional:RISCV_TB} -tclbatch {RISCV_TB.tcl} -view {C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg
+WARNING: Simulation object /RISCV_TB/uut/ID_i/RB_i/CS was not found in the design.
+WARNING: Simulation object /RISCV_TB/uut/ID_i/RB_i/NS was not found in the design.
+open_wave_config: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 1359.562 ; gain = 0.000
+source RISCV_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:03:09 . Memory (MB): peak = 1359.562 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:48 ; elapsed = 00:03:36 . Memory (MB): peak = 1359.562 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:53 ; elapsed = 00:03:48 . Memory (MB): peak = 1359.562 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Mon Nov  2 09:13:13 2020] Launched synth_1...
+Run output will be captured here: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISCV_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RISCV_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EX'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+"xelab -wto b2ac9b69423e436595a5ff0b2f7dfae7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RISCV_TB_behav xil_defaultlib.RISCV_TB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b2ac9b69423e436595a5ff0b2f7dfae7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RISCV_TB_behav xil_defaultlib.RISCV_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.riscv_vicilogic_package
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture rtl of entity xil_defaultlib.CB32CLEIncValue [cb32cleincvalue_default]
+Compiling architecture comb of entity xil_defaultlib.IM [im_default]
+Compiling architecture struct of entity xil_defaultlib.RISCV_IF [riscv_if_default]
+Compiling architecture combinational of entity xil_defaultlib.DEC [dec_default]
+Compiling architecture rtl of entity xil_defaultlib.RB [rb_default]
+Compiling architecture struct of entity xil_defaultlib.ID [id_default]
+Compiling architecture comb of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture comb of entity xil_defaultlib.EX [ex_default]
+Compiling architecture rtl of entity xil_defaultlib.MEM [mem_default]
+Compiling architecture combinational of entity xil_defaultlib.WB [wb_default]
+Compiling architecture struct of entity xil_defaultlib.RISCV [riscv_default]
+Compiling architecture behavior of entity xil_defaultlib.riscv_tb
+Built simulation snapshot RISCV_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.629 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RISCV_TB_behav -key {Behavioral:sim_1:Functional:RISCV_TB} -tclbatch {RISCV_TB.tcl} -view {C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg
+WARNING: Simulation object /RISCV_TB/uut/ID_i/RB_i/CS was not found in the design.
+WARNING: Simulation object /RISCV_TB/uut/ID_i/RB_i/NS was not found in the design.
+open_wave_config: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1375.629 ; gain = 0.000
+source RISCV_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: RISC-V simulation start
+Time: 54 ns  Iteration: 0  Process: /RISCV_TB/STIM_i  File: C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV_TB.vhd
+xsim: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1375.629 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RISCV_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1375.629 ; gain = 0.000
+save_wave_config {C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg}
+save_wave_config {C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 09:24:16 2020...
