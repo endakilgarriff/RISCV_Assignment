@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  2 08:52:00 2020
+# Process ID: 28884
+# Current directory: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10384 C:\RISCV_VivadoVHDLProject_vicilogic_2\xilinxprj\RISCV\riscv.xpr
+# Log file: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/vivado.log
+# Journal file: C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/riscv.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg
+source RISCV_TB.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg
+source RISCV_TB.tcl
+save_wave_config {C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg}
+save_wave_config {C:/RISCV_VivadoVHDLProject_vicilogic_2/xilinxprj/RISCV/simulation/RISCV_TB_behav.wcfg}
+close_sim

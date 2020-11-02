@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/ALU.vhd,1604263362,vhdl,,,,alu,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd,1604308386,vhdl,,,,ex,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/DEC.vhd,1604263363,vhdl,,,,dec,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/ID.vhd,1604263363,vhdl,,,,id,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/ID/RB.vhd,1604263364,vhdl,,,,rb,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/CB32CLEIncValue.vhd,1604263364,vhdl,,,,cb32cleincvalue,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IF.vhd,1604263365,vhdl,,,,riscv_if,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/IF/IM.vhd,1604263365,vhdl,,,,im,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/MEM/MEM.vhd,1604263366,vhdl,,,,mem,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV.vhd,1604263361,vhdl,,,,riscv,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV_TB.vhd,1604263361,vhdl,,,,riscv_tb,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/RISCV_vicilogic_Package.vhd,1604263362,vhdl,C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/EX/EX.vhd,,,riscv_vicilogic_package,,,,,,,,
+C:/RISCV_VivadoVHDLProject_vicilogic_2/HDLmodel/WB/WB.vhd,1604263366,vhdl,,,,wb,,,,,,,,
